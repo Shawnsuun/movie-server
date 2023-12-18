@@ -57,8 +57,8 @@ app.use("/movie", movieRoutes);
 
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT || 6001;
-const CONNECTION_STRING = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/final'
+const PORT = process.env.PORT;
+const CONNECTION_STRING = process.env.MONGO_URL
 console.log(CONNECTION_STRING)
 mongoose
   .connect(CONNECTION_STRING, {
